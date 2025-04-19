@@ -53,6 +53,9 @@ img {
 /* HEADER */
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -81,6 +84,21 @@ img {
   display: block;
   padding: 24px 0;
 }
+.studio-element {
+  position:relative;
+}
+.studio-element::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .contacts-list {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -90,6 +108,7 @@ img {
   color: #434455;
   display: flex;
   gap: 40px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo {
   /* STYLE */
@@ -148,6 +167,7 @@ img {
   font-weight: 700;
   letter-spacing: 0.02em;
   color: #ffffff;
+  max-width: 1440px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -156,6 +176,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .call-to-action .container {
   /* LAYOUT */
@@ -209,6 +230,10 @@ img {
   gap: 24px;
 }
 .advantage-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   background-color: #f4f4fd;
@@ -263,6 +288,7 @@ img {
   gap: 24px;
 }
 .team-member {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4);
 }
@@ -292,26 +318,31 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
 }
+.member-social-media-link {
+  width: 100%;
+  height: 100%;
+   background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.member-social-media-link:hover,
+.member-social-media-link:focus {
+  background-color: #404bbf;
+}
 .social-media-list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-media-list-item {
-  width: 40px;
-  height: 40px;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-}
-.social-media-list-item:hover {
-  background-color: #404bbf;
-}
+
 .member-social-media-icon {
-  padding: 12px;
   fill: #f4f4fd;
-  width: 40px;
-  height: 40px;
+  width: 16px;
+  height: 16px;
 }
 /* Product section */
 .our-portfolio {
