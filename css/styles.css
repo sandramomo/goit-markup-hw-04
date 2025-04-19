@@ -431,6 +431,7 @@ padding: 40px 32px;
 .footer-container-box {
   display:flex;
   align-items: baseline;
+  margin-left: 156px;
 }
 .bottom-logo {
   display: inline-block;
@@ -452,8 +453,14 @@ padding: 40px 0px 100px 120px;
 .footer-social-media-title {
 font-weight: 500;
 color: #fff;
-padding: 0 0 16px 0;
+letter-spacing: 0.02em;
+margin-bottom:16px;
 }
-.company-social-media:hover {
+.company-social-media-list {
+  display:flex;
+  gap: 16px;
+}
+.company-social-media-link:hover,
+.company-social-media-link:focus {
 background-color: #31d0aa;
 }
