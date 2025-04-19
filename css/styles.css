@@ -83,9 +83,11 @@ img {
 .nav-list-element {
   display: block;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .studio-element {
   position:relative;
+  color:#404bbf;
 }
 .studio-element::after {
   content: "";
@@ -96,7 +98,6 @@ img {
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-list {
@@ -108,7 +109,6 @@ img {
   color: #434455;
   display: flex;
   gap: 40px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo {
   /* STYLE */
@@ -135,7 +135,9 @@ img {
   letter-spacing: 0.02em;
   align-self: center;
 }
-
+.contact-element {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .contact-element:hover,
 .nav-list-element:hover,
 .nav-list-element:focus,
@@ -201,6 +203,7 @@ img {
   margin-top: 46px;
   min-width: 169px;
   height: 56px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-btn:hover,
 .order-btn:focus {
@@ -326,6 +329,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .member-social-media-link:hover,
 .member-social-media-link:focus {
@@ -338,7 +342,10 @@ img {
   gap: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.social-media-list-item {
+  width: 40px;
+  height: 40px;
+}
 .member-social-media-icon {
   fill: #f4f4fd;
   width: 16px;
